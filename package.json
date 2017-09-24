@@ -1,0 +1,41 @@
+{
+  "name": "koa-server",
+  "version": "0.0.1",
+  "description": "A node server base koa.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "NODE_ENV=development nodemon --inspect app.js",
+    "server": "NODE_ENV=production pm2 start ./bin/www --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TaylorPzreal/koa-server.git"
+  },
+  "keywords": ["koa-server"],
+  "author": "nattatorn.dev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TaylorPzreal/koa-server/issues"
+  },
+  "homepage": "https://github.com/TaylorPzreal/koa-server#readme",
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "gt3-sdk": "^2.0.0",
+    "handlebars": "^4.0.10",
+    "koa": "^2.3.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-passport": "^4.0.0",
+    "koa-redis": "^3.1.1",
+    "koa-router": "^7.2.1",
+    "koa-session": "^5.5.0",
+    "mysql": "^2.14.1",
+    "mysql2": "^1.4.2",
+    "passport-local": "^1.0.0",
+    "redis": "^2.8.0",
+    "sequelize": "^4.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  }
+}
